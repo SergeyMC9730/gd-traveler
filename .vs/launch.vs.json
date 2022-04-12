@@ -1,0 +1,13 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "dll",
+      "exe": "cmd.exe /C copy gdtraveler.dll /B /Y \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Geometry Dash\\adaf-dll\\\" /B",
+      "project": "CMakeLists.txt",
+      "projectTarget": "gdtraveler.dll",
+      "name": "gdtraveler.dll"
+    }
+  ]
+}

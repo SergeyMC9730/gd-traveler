@@ -35,3 +35,10 @@ build
 
 # Macos be like
 **/.DS_Store
+
+out
+.vs/v17
+.vs/cmake.db
+.vs/CMake Overview
+.vs/s1nx.sqlite
+.vs/gd-traveler

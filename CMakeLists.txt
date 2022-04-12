@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
-project(CrossTemplate VERSION 0.1.0 LANGUAGES CXX)
+project(gdtraveler VERSION 0.1.0 LANGUAGES CXX C)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fms-extensions -Xlinker --no-demangle")
 set(CMAKE_CXX_STANDARD 17)
 
@@ -36,6 +36,7 @@ else()
         cocos-headers/cocos2dx/platform/third_party/win32
         cocos-headers/cocos2dx/platform/third_party/win32/OGLES
         minhook/include
+        cJson/
     )
     add_subdirectory(minhook EXCLUDE_FROM_ALL)
     set(CMAKE_SIZEOF_VOID_P 4)
@@ -45,7 +46,8 @@ endif()
 
 add_library(${PROJECT_NAME} SHARED 
     main.cpp
-)
+    cJSON/cJSON.c
+ "config.h")
 
 if(APPLE)
     target_link_directories(${PROJECT_NAME} PRIVATE Cacao)
