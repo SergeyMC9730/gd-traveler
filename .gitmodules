@@ -7,6 +7,3 @@
 [submodule "minhook"]
 	path = minhook
 	url = https://github.com/TsudaKageyu/minhook
-[submodule "cJSON"]
-	path = cJSON
-	url = git@github.com:DaveGamble/cJSON.git

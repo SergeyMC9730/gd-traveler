@@ -36,7 +36,6 @@ else()
         cocos-headers/cocos2dx/platform/third_party/win32
         cocos-headers/cocos2dx/platform/third_party/win32/OGLES
         minhook/include
-        cJson/
     )
     add_subdirectory(minhook EXCLUDE_FROM_ALL)
     set(CMAKE_SIZEOF_VOID_P 4)
@@ -46,7 +45,6 @@ endif()
 
 add_library(${PROJECT_NAME} SHARED 
     main.cpp
-    cJSON/cJSON.c
  "config.h")
 
 if(APPLE)
